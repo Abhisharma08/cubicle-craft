@@ -30,7 +30,7 @@ export function Header({ onContactClick }: { onContactClick: () => void }) {
             className="h-10 w-auto"
           />
         </Link>
-        <nav className="ml-auto hidden md:flex gap-4 sm:gap-8 items-center">
+        <nav className="ml-auto hidden md:flex gap-6 items-center">
           <Link
             href="#about"
             className="text-md font-medium hover:underline underline-offset-4"
@@ -61,7 +61,7 @@ export function Header({ onContactClick }: { onContactClick: () => void }) {
           </Link>
           <Button onClick={onContactClick}>Contact Us</Button>
         </nav>
-        <div className="ml-auto md:hidden">
+        <div className="ml-auto md:hidden flex items-center gap-2">
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
