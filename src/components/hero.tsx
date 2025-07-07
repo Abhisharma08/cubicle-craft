@@ -7,13 +7,13 @@ export function Hero() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center gap-8 text-center">
-          <div className="flex flex-col items-center space-y-4">
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
+          <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-4">
               <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 CubicleCraft: Redefining Workspaces
               </h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+              <p className="max-w-[700px] text-muted-foreground md:text-xl">
                 We use an artistic approach to interior design to create a one-of-a-kind reflection of self in each place. Our strategy is always in line with our client's goals; hence, we build locations that promote profitable real estate results.
               </p>
             </div>

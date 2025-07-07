@@ -4,7 +4,7 @@ export function AboutUs() {
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center gap-10 text-center">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm font-medium">
               About Us
@@ -12,10 +12,10 @@ export function AboutUs() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
               CubicleCraft
             </h2>
-            <p className="mx-auto max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               We use an artistic approach to interior design to create a one-of-a-kind reflection of self in each place. Our strategy is always in line with our client's goals; hence, we build locations that promote profitable real estate results. We design in a collaborative setting so that we can fulfill the client's final vision. Our designs are contemporary while maintaining a classic elegance, resulting in a wider market appeal.
             </p>
-            <p className="mx-auto max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Our designers are constantly on the lookout for the most attractive design trends and materials of the most incredible quality. We can customize each design specifically for your target market after hours of rigorous market research.
             </p>
           </div>
