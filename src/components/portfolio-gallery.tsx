@@ -8,46 +8,40 @@ import {
 
 const projects = [
   {
-    title: "Office Interiors",
-    description:
-      "Innovative and productive office interior designs.",
+    title: "Modern Open-Plan Office",
+    description: "A bright and functional open-plan office designed for seamless collaboration and productivity.",
     image: "https://placehold.co/600x400.png",
-    hint: "modern office interior",
+    hint: "modern open office",
   },
   {
-    title: "False Ceiling",
-    description:
-      "Creative and elegant false ceiling solutions for a modern look.",
+    title: "Executive Suite",
+    description: "Sophisticated and luxurious executive suites featuring premium materials and bespoke furniture.",
     image: "https://placehold.co/600x400.png",
-    hint: "creative false ceiling",
+    hint: "luxury executive office",
   },
   {
-    title: "Restaurant Interiors",
-    description:
-      "Ambiance that complements your culinary creations.",
+    title: "Collaborative Breakout Space",
+    description: "Vibrant and comfortable breakout areas designed to foster creativity, innovation, and relaxation.",
     image: "https://placehold.co/600x400.png",
-    hint: "stylish restaurant interior",
+    hint: "office breakout space",
   },
   {
-    title: "Café Interiors",
-    description:
-      "Cozy and inviting cafe designs for your customers.",
+    title: "Tech Startup Headquarters",
+    description: "A dynamic and flexible workspace that embodies the innovative spirit of a fast-paced tech company.",
     image: "https://placehold.co/600x400.png",
-    hint: "cozy cafe interior",
+    hint: "tech startup office",
   },
   {
-    title: "Bespoke Furnitures",
-    description:
-      "Custom furniture that fits your space and style perfectly.",
+    title: "Corporate Boardroom",
+    description: "State-of-the-art boardrooms with integrated technology to facilitate effective and impressive meetings.",
     image: "https://placehold.co/600x400.png",
-    hint: "bespoke office furniture",
+    hint: "corporate boardroom",
   },
   {
-    title: "Office Workstation",
-    description:
-      "Modular and smart office workstations for collaborative environments.",
+    title: "Welcoming Reception Area",
+    description: "Creating a memorable first impression with a stylish and welcoming reception and waiting area.",
     image: "https://placehold.co/600x400.png",
-    hint: "modular office workstation",
+    hint: "modern office reception",
   },
 ];
 
@@ -58,10 +52,10 @@ export function Gallery() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">
-              Our Gallery
+              Our Work
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Explore a selection of our finest work. Each project tells a story
+              Explore a selection of our finest workspace transformations. Each project tells a story
               of collaboration, creativity, and craftsmanship.
             </p>
           </div>

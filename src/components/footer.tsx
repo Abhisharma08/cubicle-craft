@@ -1,8 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export function Footer() {
+  const [year, setYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-background border-t">
       <div className="container mx-auto py-8 px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -16,7 +25,7 @@ export function Footer() {
           />
         </div>
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} CubicleCraft. All rights reserved.
+          &copy; {year} CubicleCraft. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <Link

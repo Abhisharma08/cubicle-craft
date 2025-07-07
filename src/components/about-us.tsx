@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { DraftingCompass, Lightbulb, Wrench } from "lucide-react";
 
 export function AboutUs() {
   return (
@@ -34,26 +33,47 @@ export function AboutUs() {
 
         <div className="mt-16 md:mt-24 text-center">
             <h3 className="text-2xl font-bold tracking-tighter sm:text-4xl font-headline">
-              Why Choose Us
+              Our Process
             </h3>
-             <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-3">
-              <div className="flex flex-col items-center p-6 bg-card rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-                <div className="flex items-center justify-center bg-primary text-primary-foreground rounded-full h-16 w-16 mb-4">
-                  <Lightbulb className="h-8 w-8" />
-                </div>
-                <h4 className="text-xl font-bold font-headline mb-2">Idea & Concept</h4>
+            <p className="max-w-[600px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
+              We follow a collaborative and streamlined process to bring your vision to life, from initial concept to final installation.
+            </p>
+             <div className="mt-12 grid gap-12 sm:grid-cols-1 md:grid-cols-3">
+              <div className="flex flex-col items-center text-center">
+                <Image
+                  src="https://placehold.co/400x300.png"
+                  data-ai-hint="designers brainstorming sketch"
+                  width={400}
+                  height={300}
+                  alt="Idea & Concept"
+                  className="rounded-lg mb-4 object-cover w-full aspect-[4/3] shadow-lg transition-transform duration-300 hover:scale-105"
+                />
+                <h4 className="text-xl font-bold font-headline mb-2">1. Idea & Concept</h4>
+                <p className="text-muted-foreground">We start with a deep dive into your vision, needs, and the unique potential of your space.</p>
               </div>
-              <div className="flex flex-col items-center p-6 bg-card rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-                <div className="flex items-center justify-center bg-primary text-primary-foreground rounded-full h-16 w-16 mb-4">
-                  <DraftingCompass className="h-8 w-8" />
-                </div>
-                <h4 className="text-xl font-bold font-headline mb-2">Design & Create</h4>
+              <div className="flex flex-col items-center text-center">
+                <Image
+                  src="https://placehold.co/400x300.png"
+                  data-ai-hint="interior design 3d model"
+                  width={400}
+                  height={300}
+                  alt="Design & Create"
+                  className="rounded-lg mb-4 object-cover w-full aspect-[4/3] shadow-lg transition-transform duration-300 hover:scale-105"
+                />
+                <h4 className="text-xl font-bold font-headline mb-2">2. Design & Create</h4>
+                <p className="text-muted-foreground">Our designers craft detailed plans and 3D visualizations to help you see the future.</p>
               </div>
-              <div className="flex flex-col items-center p-6 bg-card rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-                <div className="flex items-center justify-center bg-primary text-primary-foreground rounded-full h-16 w-16 mb-4">
-                  <Wrench className="h-8 w-8" />
-                </div>
-                <h4 className="text-xl font-bold font-headline mb-2">Build & Install</h4>
+              <div className="flex flex-col items-center text-center">
+                <Image
+                  src="https://placehold.co/400x300.png"
+                  data-ai-hint="workspace construction install"
+                  width={400}
+                  height={300}
+                  alt="Build & Install"
+                  className="rounded-lg mb-4 object-cover w-full aspect-[4/3] shadow-lg transition-transform duration-300 hover:scale-105"
+                />
+                <h4 className="text-xl font-bold font-headline mb-2">3. Build & Install</h4>
+                <p className="text-muted-foreground">We manage the project to completion, ensuring quality craftsmanship and a seamless installation.</p>
               </div>
             </div>
           </div>
