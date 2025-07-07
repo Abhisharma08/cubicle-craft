@@ -57,8 +57,8 @@ export function Services() {
 
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-2 mt-12">
             {mainServices.map(service => (
-                <Card key={service.title} className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <CardHeader className="flex flex-row items-center gap-4 space-y-0">
+                <Card key={service.title} className="shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+                    <CardHeader className="flex flex-col items-center gap-4">
                         {service.icon}
                         <CardTitle className="font-headline">{service.title}</CardTitle>
                     </CardHeader>
@@ -89,8 +89,8 @@ export function Services() {
             </h3>
             <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-3 mt-8">
                 {features.map(feature => (
-                    <Card key={feature.title} className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <CardHeader className="flex flex-row items-center gap-4 space-y-0">
+                    <Card key={feature.title} className="shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+                        <CardHeader className="flex flex-col items-center gap-4">
                             {feature.icon}
                             <CardTitle className="font-headline">{feature.title}</CardTitle>
                         </CardHeader>
