@@ -10,38 +10,32 @@ const projects = [
   {
     title: "Modern Open-Plan Office",
     description: "A bright and functional open-plan office designed for seamless collaboration and productivity.",
-    image: "https://placehold.co/600x400.png",
-    hint: "modern open office",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976155/600x400-04_nbavxy.jpg",
   },
   {
     title: "Executive Suite",
     description: "Sophisticated and luxurious executive suites featuring premium materials and bespoke furniture.",
-    image: "https://placehold.co/600x400.png",
-    hint: "luxury executive office",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976155/600x400-03_yf86ha.jpg",
   },
   {
     title: "Collaborative Breakout Space",
     description: "Vibrant and comfortable breakout areas designed to foster creativity, innovation, and relaxation.",
-    image: "https://placehold.co/600x400.png",
-    hint: "office breakout space",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976155/600x400-06_czlbf2.jpg",
   },
   {
     title: "Tech Startup Headquarters",
     description: "A dynamic and flexible workspace that embodies the innovative spirit of a fast-paced tech company.",
-    image: "https://placehold.co/600x400.png",
-    hint: "tech startup office",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976155/600x400-05_sg2wri.jpg",
   },
   {
     title: "Corporate Boardroom",
     description: "State-of-the-art boardrooms with integrated technology to facilitate effective and impressive meetings.",
-    image: "https://placehold.co/600x400.png",
-    hint: "corporate boardroom",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976154/600x400-01_g8b97h.jpg",
   },
   {
     title: "Welcoming Reception Area",
     description: "Creating a memorable first impression with a stylish and welcoming reception and waiting area.",
-    image: "https://placehold.co/600x400.png",
-    hint: "modern office reception",
+    image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976154/600x400-02_bhcv0s.jpg",
   },
 ];
 
@@ -66,7 +60,6 @@ export function Gallery() {
               <div className="overflow-hidden rounded-t-lg">
                 <Image
                   src={project.image}
-                  data-ai-hint={project.hint}
                   width={600}
                   height={400}
                   alt={project.title}

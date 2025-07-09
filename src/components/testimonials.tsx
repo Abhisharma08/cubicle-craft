@@ -1,5 +1,12 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card, CardContent } from "./ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -40,26 +47,42 @@ export function Testimonials() {
             Hear from our satisfied customers about their experience with CubicleCraft.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="border-none shadow-lg">
-              <CardContent className="p-6">
-                <blockquote className="text-lg text-card-foreground italic border-l-4 border-primary pl-4">
-                  "{testimonial.quote}"
-                </blockquote>
-                <div className="mt-6 flex items-center">
-                  <Avatar className="h-12 w-12 border-2 border-primary">
-                    <AvatarImage src={testimonial.avatar} data-ai-hint={testimonial.hint} />
-                    <AvatarFallback>{testimonial.name.substring(0, 2)}</AvatarFallback>
-                  </Avatar>
-                  <div className="ml-4">
-                    <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+        <div className="mt-12">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3">
+                  <div className="p-4">
+                    <Card className="border-none shadow-lg h-full">
+                      <CardContent className="p-6 flex flex-col justify-between h-full">
+                        <blockquote className="text-lg text-card-foreground italic border-l-4 border-primary pl-4 flex-grow">
+                          "{testimonial.quote}"
+                        </blockquote>
+                        <div className="mt-6 flex items-center">
+                          <Avatar className="h-12 w-12 border-2 border-primary">
+                            <AvatarImage src={testimonial.avatar} data-ai-hint={testimonial.hint} />
+                            <AvatarFallback>{testimonial.name.substring(0, 2)}</AvatarFallback>
+                          </Avatar>
+                          <div className="ml-4">
+                            <p className="font-semibold">{testimonial.name}</p>
+                            <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden sm:flex" />
+            <CarouselNext className="hidden sm:flex" />
+          </Carousel>
         </div>
       </div>
     </section>

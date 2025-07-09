@@ -13,7 +13,7 @@ import {
 } from "./ui/sheet";
 import { Menu } from "lucide-react";
 
-export function Header() {
+export function Header({ onContactClick }: { onContactClick: () => void }) {
   return (
     <header className="bg-background/95 backdrop-blur-sm sticky top-0 z-50 border-b">
       <div className="container mx-auto flex h-20 items-center px-4 lg:px-6">
@@ -30,7 +30,7 @@ export function Header() {
             className="h-10 w-auto"
           />
         </Link>
-        <nav className="ml-auto hidden md:flex gap-4 sm:gap-8 items-center">
+        <nav className="ml-auto hidden md:flex gap-6 items-center">
           <Link
             href="#about"
             className="text-md font-medium hover:underline underline-offset-4"
@@ -59,11 +59,9 @@ export function Header() {
           >
             FAQ
           </Link>
-          <Button asChild>
-            <Link href="#contact">Contact Us</Link>
-          </Button>
+          <Button onClick={onContactClick}>Contact Us</Button>
         </nav>
-        <div className="ml-auto md:hidden">
+        <div className="ml-auto md:hidden flex items-center gap-2">
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
@@ -126,9 +124,7 @@ export function Header() {
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <Button asChild>
-                    <Link href="#contact">Contact Us</Link>
-                  </Button>
+                  <Button onClick={onContactClick}>Contact Us</Button>
                 </SheetClose>
               </nav>
             </SheetContent>

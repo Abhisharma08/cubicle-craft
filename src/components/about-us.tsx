@@ -21,8 +21,7 @@ export function AboutUs() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/800x550.png"
-              data-ai-hint="office interior design team meeting"
+              src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976157/800x550-01_ncg4wy.jpg"
               width="800"
               height="550"
               alt="About us"
