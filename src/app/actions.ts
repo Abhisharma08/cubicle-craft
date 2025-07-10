@@ -1,6 +1,7 @@
 'use server';
 
 import { z } from 'zod';
+import { appendToSheet } from '@/services/google-sheets';
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -29,7 +30,12 @@ export async function submitContactForm(values: z.infer<typeof formSchema>) {
         return { error: 'Invalid data provided.' };
     }
     
-    console.log("Form submission received (Google Sheets integration is disabled):", validatedFields.data);
+    const result = await appendToSheet(validatedFields.data);
+
+    if (!result.success) {
+      console.error('Failed to append to sheet:', result.error);
+      return { error: 'There was a problem saving your message. Please try again later.' };
+    }
     
     return { success: 'Your message has been sent successfully!' };
 }
