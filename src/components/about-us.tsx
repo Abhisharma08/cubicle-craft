@@ -40,7 +40,7 @@ export function AboutUs() {
              <div className="mt-12 grid gap-12 sm:grid-cols-1 md:grid-cols-3">
               <div className="flex flex-col items-center text-center">
                 <Image
-                  src="https://placehold.co/400x300.png"
+                  src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752133126/1_obuzyw.jpg"
                   data-ai-hint="designers brainstorming sketch"
                   width={400}
                   height={300}
@@ -52,7 +52,7 @@ export function AboutUs() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <Image
-                  src="https://placehold.co/400x300.png"
+                  src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752133126/2_jzjrwd.jpg"
                   data-ai-hint="interior design 3d model"
                   width={400}
                   height={300}
@@ -64,7 +64,7 @@ export function AboutUs() {
               </div>
               <div className="flex flex-col items-center text-center">
                 <Image
-                  src="https://placehold.co/400x300.png"
+                  src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752133126/3_xq0ckk.jpg"
                   data-ai-hint="workspace construction install"
                   width={400}
                   height={300}
