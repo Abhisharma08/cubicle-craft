@@ -18,26 +18,18 @@ export function Hero() {
       </div>
       <div className="relative z-10 container mx-auto px-4 md:px-6 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
-          <h1
-  style={{
-    fontSize: "3.5rem",
-    lineHeight: "1.25",
-    fontWeight: "bold",
-    letterSpacing: "-0.025em",
-    fontFamily: "YourHeadlineFont, sans-serif",
-  }}
->
-  CubicleCraft: Redefining Workspaces
-</h1>
+          <h1 className="text-[3.5rem] leading-tight font-bold tracking-tighter lg:text-6xl xl:text-7xl/none font-headline">
+            CubicleCraft
+          </h1>
           <p className="text-lg text-neutral-200 md:text-xl max-w-2xl mx-auto">
-            We use an artistic approach to interior design to create unique spaces that reflect your identity and achieve your goals.
+            We create workspaces that inspire teams, offering modular workstations, ergonomic chairs, and smart storage solutions.
           </p>
           <div className="flex flex-col gap-4 min-[400px]:flex-row justify-center">
             <Button asChild size="lg">
               <Link href="#about">Read More <ArrowRight className="ml-2" /></Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
-              <Link href="#gallery">View Gallery <GalleryVertical className="ml-2" /></Link>
+              <Link href="#gallery">Gallery <GalleryVertical className="ml-2" /></Link>
             </Button>
           </div>
         </div>

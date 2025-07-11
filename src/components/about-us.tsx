@@ -13,10 +13,10 @@ export function AboutUs() {
               CubicleCraft
             </h2>
             <p className="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              We use an artistic approach to interior design to create a one-of-a-kind reflection of self in each place. Our strategy is always in line with our client's goals; hence, we build locations that promote profitable real estate results. We design in a collaborative setting so that we can fulfill the client's final vision. Our designs are contemporary while maintaining a classic elegance, resulting in a wider market appeal.
+              At CubicleCraft, we focus on transforming offices into practical, comfortable, and inspiring spaces. Our solutions go beyond aesthetics—we help you maximize productivity and comfort with furniture that works as hard as you do.
             </p>
             <p className="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our designers are constantly on the lookout for the most attractive design trends and materials of the most incredible quality. We can customize each design specifically for your target market after hours of rigorous market research.
+              Whether it’s modular workstations that support collaboration, ergonomic seating for all-day comfort, or storage that keeps things organized, we ensure every piece fits your workspace perfectly. We’re committed to staying ahead of trends in workplace furniture and technology, delivering solutions that combine functionality, durability, and style.
             </p>
           </div>
           <div className="flex justify-center">
@@ -35,44 +35,41 @@ export function AboutUs() {
               Our Process
             </h3>
             <p className="max-w-[600px] mx-auto text-muted-foreground md:text-xl/relaxed mt-4">
-              We follow a collaborative and streamlined process to bring your vision to life, from initial concept to final installation.
+              We make upgrading your office simple, efficient, and stress-free.
             </p>
              <div className="mt-12 grid gap-12 sm:grid-cols-1 md:grid-cols-3">
               <div className="flex flex-col items-center text-center">
                 <Image
                   src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752133126/1_obuzyw.jpg"
-                  data-ai-hint="designers brainstorming sketch"
                   width={400}
                   height={300}
-                  alt="Idea & Concept"
-                  className="rounded-lg mb-4 object-cover w-full aspect-[4/3] shadow-lg transition-transform duration-300 hover:scale-105"
+                  alt="Understand Your Space"
+                  className="rounded-lg mb-4 object-contain w-full aspect-[4/3] shadow-lg transition-transform duration-300 hover:scale-105"
                 />
-                <h4 className="text-xl font-bold font-headline mb-2">1. Idea & Concept</h4>
-                <p className="text-muted-foreground">We start with a deep dive into your vision, needs, and the unique potential of your space.</p>
+                <h4 className="text-xl font-bold font-headline mb-2">1. Understand Your Space</h4>
+                <p className="text-muted-foreground">We assess your current workspace, team size, and specific furniture needs.</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <Image
                   src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752133126/2_jzjrwd.jpg"
-                  data-ai-hint="interior design 3d model"
                   width={400}
                   height={300}
-                  alt="Design & Create"
-                  className="rounded-lg mb-4 object-cover w-full aspect-[4/3] shadow-lg transition-transform duration-300 hover:scale-105"
+                  alt="Recommend Solutions"
+                  className="rounded-lg mb-4 object-contain w-full aspect-[4/3] shadow-lg transition-transform duration-300 hover:scale-105"
                 />
-                <h4 className="text-xl font-bold font-headline mb-2">2. Design & Create</h4>
-                <p className="text-muted-foreground">Our designers craft detailed plans and 3D visualizations to help you see the future.</p>
+                <h4 className="text-xl font-bold font-headline mb-2">2. Recommend Solutions</h4>
+                <p className="text-muted-foreground">Our experts suggest workstation layouts, storage options, and furniture pieces that fit your goals and budget.</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <Image
                   src="https://res.cloudinary.com/ddqqlfsjp/image/upload/v1752133126/3_xq0ckk.jpg"
-                  data-ai-hint="workspace construction install"
                   width={400}
                   height={300}
-                  alt="Build & Install"
-                  className="rounded-lg mb-4 object-cover w-full aspect-[4/3] shadow-lg transition-transform duration-300 hover:scale-105"
+                  alt="Deliver & Set Up"
+                  className="rounded-lg mb-4 object-contain w-full aspect-[4/3] shadow-lg transition-transform duration-300 hover:scale-105"
                 />
-                <h4 className="text-xl font-bold font-headline mb-2">3. Build & Install</h4>
-                <p className="text-muted-foreground">We manage the project to completion, ensuring quality craftsmanship and a seamless installation.</p>
+                <h4 className="text-xl font-bold font-headline mb-2">3. Deliver & Set Up</h4>
+                <p className="text-muted-foreground">We handle delivery, assembly, and placement so your new workspace is ready for immediate use.</p>
               </div>
             </div>
           </div>

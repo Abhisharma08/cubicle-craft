@@ -1,40 +1,38 @@
-import { Briefcase, PaintRoller, Armchair, Building2, Layers, Utensils, View } from "lucide-react";
+import { Briefcase, PaintRoller, Armchair, Building2, Layers, Utensils, View, Box, DraftingCompass } from "lucide-react";
 import React from "react";
 
 const mainServices = [
     {
-        title: "Commercial Interior",
-        description: "We provide the Best Commercial Interior to customers based on their requirements.",
-        icon: Building2,
+        title: "Office Workstations",
+        description: "Modular workstations designed to support modern workstyles and efficient space use.",
+        icon: DraftingCompass,
     },
     {
-        title: "3D Visualization",
-        description: "We are specialized in creating high-quality 3D visualizations for Commercial interior design and decor.",
-        icon: View,
+        title: "Storage Solutions",
+        description: "Smart storage units that help keep offices tidy, organized, and clutter-free.",
+        icon: Box,
+    },
+    {
+        title: "Office Furniture",
+        description: "Ergonomic chairs, executive desks, and modern furniture that blend style and function.",
+        icon: Armchair,
     }
-];
-
-const commercialServices = [
-    { name: "Office Interiors", icon: Building2 },
-    { name: "Bespoke Furnitures", icon: Armchair },
-    { name: "False Ceiling", icon: Layers },
-    { name: "Restaurant Interiors", icon: Utensils }
 ];
 
 const features = [
     {
         title: "New Office Setup",
-        description: "Setting up a new office requires careful planning and consideration of various factors to ensure productivity, efficiency, and comfort for everyone.",
+        description: "Complete furniture packages for setting up a new office with a focus on workflow, comfort, and modern aesthetics.",
         icon: Briefcase,
     },
     {
         title: "Office Renovation",
-        description: "Office renovation projects can breathe new life into your workspace, enhance productivity, and improve employee morale.",
+        description: "Upgrade existing spaces with new furniture and layouts that improve productivity and give your office a fresh, modern feel.",
         icon: PaintRoller,
     },
     {
         title: "Furniture & Products",
-        description: "Selecting furniture and products for your office, it's important to prioritize comfort, functionality, durability, and aesthetics.",
+        description: "An extensive range of workstations, storage systems, and ergonomic furniture built for both performance and visual appeal.",
         icon: Armchair,
     }
 ]
@@ -49,15 +47,6 @@ function ServiceCard({ icon: Icon, title, description }: { icon: React.ElementTy
     );
 }
 
-function CommercialServiceCard({ icon: Icon, name }: { icon: React.ElementType, name: string }) {
-    return (
-        <div className="flex flex-col h-full items-center justify-center p-6 rounded-lg bg-card shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border">
-            <Icon className="h-10 w-10 text-primary mb-4" />
-            <h4 className="text-lg font-semibold text-center font-headline">{name}</h4>
-        </div>
-    )
-}
-
 export function Services() {
   return (
     <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
@@ -68,11 +57,11 @@ export function Services() {
             What We Do
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            We Provide best Commerical Interior Designs. Our designs are contemporary while maintaining a classic elegance, resulting in a wider market appeal.
+            We provide end-to-end office furniture solutions that enhance comfort, productivity, and the look of your workspace.
           </p>
         </div>
         
-        <div className="mx-auto grid items-stretch gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-2">
+        <div className="mx-auto grid items-stretch gap-8 sm:max-w-4xl sm:grid-cols-1 md:gap-12 lg:max-w-6xl lg:grid-cols-3">
             {mainServices.map(service => (
                 <ServiceCard
                     key={service.title}
@@ -81,21 +70,6 @@ export function Services() {
                     description={service.description}
                 />
             ))}
-        </div>
-
-        <div className="mt-16 md:mt-24">
-            <h3 className="text-2xl text-center font-bold tracking-tighter sm:text-3xl font-headline mb-8">
-                Our Commercial Services
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto items-stretch">
-                {commercialServices.map(service => (
-                    <CommercialServiceCard
-                        key={service.name}
-                        icon={service.icon}
-                        name={service.name}
-                    />
-                ))}
-            </div>
         </div>
         
         <div className="mt-16 md:mt-24">

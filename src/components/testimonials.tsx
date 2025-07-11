@@ -12,21 +12,21 @@ const testimonials = [
   {
     name: "Balakrishana",
     role: "Customer",
-    quote: "I would definitely like to thank CubicleCraft for the interiors they designed and implemented. Definitely we appreciate their ideas & innovations.",
+    quote: "I would definitely like to thank Teckfore for the interiors they designed and implemented. Definitely we appreciate their ideas & innovations.",
     avatar: "https://placehold.co/100x100.png",
     hint: "smiling man",
   },
   {
     name: "Naveen Kumar",
     role: "Customer",
-    quote: "The overall experience is really impressive and commendable. What I observed is the whole CubicleCraft team were involved in this whole journey.",
+    quote: "The overall experience is really impressive and commendable. What I observed is the whole Teckfore team were involved in this whole journey.",
     avatar: "https://placehold.co/100x100.png",
     hint: "professional man",
   },
   {
     name: "Santosh Kumar",
     role: "Customer",
-    quote: "I would definitely like to thank CubicleCraft for the interiors they designed and implemented. Definitely we appreciate their ideas & innovations.",
+    quote: "I would definitely like to thank Teckfore for the interiors they designed and implemented. Definitely we appreciate their ideas & innovations.",
     avatar: "https://placehold.co/100x100.png",
     hint: "man glasses",
   },
@@ -41,7 +41,7 @@ export function Testimonials() {
             Testimonials
           </div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
-            What Our Clients Say
+            What Our Client Say's
           </h2>
           <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Hear from our satisfied customers about their experience with CubicleCraft.

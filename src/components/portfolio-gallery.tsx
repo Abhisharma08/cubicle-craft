@@ -9,32 +9,32 @@ import {
 const projects = [
   {
     title: "Modern Open-Plan Office",
-    description: "A bright and functional open-plan office designed for seamless collaboration and productivity.",
+    description: "A spacious, collaborative environment featuring modular workstations and integrated storage solutions.",
     image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976155/600x400-04_nbavxy.jpg",
   },
   {
     title: "Executive Suite",
-    description: "Sophisticated and luxurious executive suites featuring premium materials and bespoke furniture.",
+    description: "Premium workstations and elegant furniture for professional, executive spaces.",
     image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976155/600x400-03_yf86ha.jpg",
   },
   {
     title: "Collaborative Breakout Space",
-    description: "Vibrant and comfortable breakout areas designed to foster creativity, innovation, and relaxation.",
+    description: "Comfortable areas with flexible seating and storage to encourage creativity and teamwork.",
     image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976155/600x400-06_czlbf2.jpg",
   },
   {
     title: "Tech Startup Headquarters",
-    description: "A dynamic and flexible workspace that embodies the innovative spirit of a fast-paced tech company.",
+    description: "Agile workstations and furniture designed for fast-moving, innovative teams.",
     image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976155/600x400-05_sg2wri.jpg",
   },
   {
     title: "Corporate Boardroom",
-    description: "State-of-the-art boardrooms with integrated technology to facilitate effective and impressive meetings.",
+    description: "Functional boardroom furniture, including ergonomic chairs and advanced meeting tables.",
     image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976154/600x400-01_g8b97h.jpg",
   },
   {
     title: "Welcoming Reception Area",
-    description: "Creating a memorable first impression with a stylish and welcoming reception and waiting area.",
+    description: "Reception spaces with stylish desks and seating that leave a lasting first impression.",
     image: "https://res.cloudinary.com/ddqqlfsjp/image/upload/v1751976154/600x400-02_bhcv0s.jpg",
   },
 ];
@@ -49,8 +49,7 @@ export function Gallery() {
               Our Work
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Explore a selection of our finest workspace transformations. Each project tells a story
-              of collaboration, creativity, and craftsmanship.
+              Explore a selection of offices we’ve helped furnish. Each project showcases our focus on quality, functionality, and modern design.
             </p>
           </div>
         </div>
